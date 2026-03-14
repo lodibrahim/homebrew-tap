@@ -5,21 +5,21 @@
 class Logpond < Formula
   desc "TUI log viewer with built-in MCP server for AI agents"
   homepage "https://github.com/lodibrahim/logpond"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.2/logpond-darwin-amd64.tar.gz"
-      sha256 "fd1f8bc7e8891554f69fbaf25534a9b3d71ca77b44b5d14c791de95b0e241f7d"
+      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.3/logpond-darwin-amd64.tar.gz"
+      sha256 "3346b86e3247513bedcbac14d43c0b89f83a10e9c0e605017916c9321818e5b7"
 
       define_method(:install) do
         bin.install "logpond"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.2/logpond-darwin-arm64.tar.gz"
-      sha256 "b27c8087de1b0b55dc24e8eb959ed944a207e5ebcdec87dab4f51d76df298a31"
+      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.3/logpond-darwin-arm64.tar.gz"
+      sha256 "7c5e5adfe0e2cc881d95274298c10c206a76eb1958719484afe54ffacde9356a"
 
       define_method(:install) do
         bin.install "logpond"
@@ -29,15 +29,15 @@ class Logpond < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.2/logpond-linux-amd64.tar.gz"
-      sha256 "4934bc406c7dc8b4216550c9756466f8afc9b8db4ca93419f3d3e0ebb8853815"
+      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.3/logpond-linux-amd64.tar.gz"
+      sha256 "3f2f16f88483bed9274a429952fdebe481492792d651da99052c127e0d029fd6"
       define_method(:install) do
         bin.install "logpond"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.2/logpond-linux-arm64.tar.gz"
-      sha256 "5fd56bd5c616e635f319203f50c8fa4354c3b050bbbc9a76b39f88e04418fc1f"
+      url "https://github.com/lodibrahim/logpond/releases/download/v0.2.3/logpond-linux-arm64.tar.gz"
+      sha256 "dfd13992a298d6f632c01d4ac3d2928a8c01a9cf7d8b3ae125235fa94595996f"
       define_method(:install) do
         bin.install "logpond"
       end
